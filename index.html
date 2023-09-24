@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        let english = parseInt(prompt("English marks out of 100"));
+        let math = parseInt(prompt("math marks out of 100"));
+        let science = parseInt(prompt("science marks out of 100"));
+        let total;
+        let percentage;
+
+        function percentagecalculator(num1, num2, num3) {
+
+            total = num1 + num2 + num3;
+            percentage = (total / 300) * 100;
+            // percentage = percentage.tofixed(2);
+            alert("you secured " + percentage.toFixed(2) + "marks out of " + total);
+        };
+
+        if (english <= 100 && math <= 100 && science <= 100) {
+            // alert("working");
+
+            percentagecalculator(english, math, science);
+
+        } else {
+
+            alert("please enter a valid value");
+        }
+
+
+
+    </script>
+</body>
+
+</html>
